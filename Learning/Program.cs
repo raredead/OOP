@@ -21,7 +21,7 @@ namespace Learning
             }
             if (speed < 0)
             {
-                Console.WriteLine($"Едем назад со скоростью {speed} км\\ч");
+                Console.WriteLine($"Едем назад со скоростью {-speed} км\\ч");
             }
         }
         public void DriveForward()
@@ -46,8 +46,15 @@ namespace Learning
             var car = new Car();
             car.PrintSpeed();
             car.DriveForward();
+            car.PrintSpeed();
             car.Stop();
-            car.DriveBackward();
+            car.PrintSpeed();
+
+            Console.WriteLine("\t== Car 2 ==");
+            var car2 = new Car();
+            car2.PrintSpeed();
+            car2.DriveBackward();
+            car2.PrintSpeed();
         }
     }
 }
