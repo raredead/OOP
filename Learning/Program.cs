@@ -42,6 +42,12 @@ namespace Learning
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("\t== Car 1 ==");
+            var car = new Car();
+            car.PrintSpeed();
+            car.DriveForward();
+            car.Stop();
+            car.DriveBackward();
         }
     }
 }
