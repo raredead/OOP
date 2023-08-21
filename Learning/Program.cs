@@ -24,6 +24,18 @@ namespace Learning
                 Console.WriteLine($"Едем назад со скоростью {speed} км\\ч");
             }
         }
+        public void DriveForward()
+        {
+            speed = 60;
+        }
+        public void Stop()
+        {
+            speed = 0;
+        }
+        public void DriveBackward()
+        {
+            speed = -5;
+        }
     }
 
     internal class Program
